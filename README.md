@@ -4,7 +4,7 @@ Request and Response Logger for Laravel
 
 Insiperd by [Morgan - Node HTTP request logger](https://github.com/expressjs/morgan)
 
-[![Latest Stable Version](https://poser.pugx.org/prettus/laravel-request-logger/v/stable.svg)](https://packagist.org/packages/jmarcher/laravel-request-logger) [![Total Downloads](https://poser.pugx.org/prettus/laravel-request-logger/downloads.svg)](https://packagist.org/packages/prettus/laravel-request-logger) [![Latest Unstable Version](https://poser.pugx.org/prettus/laravel-request-logger/v/unstable.svg)](https://packagist.org/packages/prettus/laravel-request-logger) [![License](https://poser.pugx.org/prettus/laravel-request-logger/license.svg)](https://packagist.org/packages/prettus/laravel-request-logger)
+[![Latest Stable Version](https://poser.pugx.org/jmarcher/laravel-request-logger/v/stable.svg)](https://packagist.org/packages/jmarcher/laravel-request-logger) [![Total Downloads](https://poser.pugx.org/prettus/laravel-request-logger/downloads.svg)](https://packagist.org/packages/prettus/laravel-request-logger) [![Latest Unstable Version](https://poser.pugx.org/prettus/laravel-request-logger/v/unstable.svg)](https://packagist.org/packages/prettus/laravel-request-logger) [![License](https://poser.pugx.org/prettus/laravel-request-logger/license.svg)](https://packagist.org/packages/prettus/laravel-request-logger)
 [![Analytics](https://ga-beacon.appspot.com/UA-61050740-1/laravel-request-logger/readme)](https://packagist.org/packages/prettus/laravel-request-logger)
 
 ## Installation
@@ -14,7 +14,7 @@ Insiperd by [Morgan - Node HTTP request logger](https://github.com/expressjs/mor
 Add `jmarcher/laravel-request-logger` to the "require" section of your `composer.json` file.
 
 ```json
-	"jmarcher/laravel-request-logger": "1.0.*"
+	"jmarcher/laravel-request-logger": "1.1.*"
 ```
 
 Run `composer update` to get the latest version of the package.
