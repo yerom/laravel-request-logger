@@ -42,7 +42,9 @@ class RequestInterpolation extends BaseInterpolation {
             "port",
             "queryString",
             "remoteUser",
+            "remoteUserId",
             "referrer",
+            "remoteRoute",
             'body'
         ], [
             "ip",
@@ -50,7 +52,9 @@ class RequestInterpolation extends BaseInterpolation {
             "getPort",
             "getQueryString",
             "getUser",
+            "getUserId",
             "referer",
+            "getRouteName",
             "getContent"
         ],camel_case($variable));
 
