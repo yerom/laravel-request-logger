@@ -87,7 +87,7 @@ class RequestInterpolation extends BaseInterpolation {
             if( count($matches) == 2 ) {
                 switch($matches[0]) {
                 case "date":
-                    $matches[] = "clf";
+                    $matches[] = "iso";
                     break;
                 
                 case "request-content":
