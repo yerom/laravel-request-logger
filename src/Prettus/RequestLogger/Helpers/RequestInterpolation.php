@@ -105,13 +105,14 @@ class RequestInterpolation extends BaseInterpolation {
                 switch(strtolower($var)) {
                     case "date":
 
-                        $formats = [
-                            "clf"=>Carbon::now()->format("d/M/Y:H:i:s O"),
-                            "iso"=>Carbon::now()->toIso8601String(),
-                            "web"=>Carbon::now()->toRfc1123String()
-                        ];
+                        // $formats = [
+                        //     "clf"=>Carbon::now()->format("d/M/Y:H:i:s O"),
+                        //     "iso"=>Carbon::now()->toIso8601String(),
+                        //     "web"=>Carbon::now()->toRfc1123String()
+                        // ];
 
-                        return isset($formats[$option]) ? $formats[$option] : Carbon::now()->format($option);
+                        // return isset($formats[$option]) ? $formats[$option] : Carbon::now()->format($option);
+                        return Carbon::now()->toIso8601String();
 
                     case "req":
                     case "header":
