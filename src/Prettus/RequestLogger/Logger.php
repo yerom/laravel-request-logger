@@ -1,14 +1,14 @@
-<?php 
+<?php
 
 namespace Prettus\RequestLogger;
 
-use Illuminate\Contracts\Logging\Log;
+use Psr\Log\LoggerInterface;
 
 /**
  * Class Logger
  * @package Prettus\Logger\Request
  */
-class Logger implements Log
+class Logger implements LoggerInterface
 {
 
     /**
@@ -137,6 +137,19 @@ class Logger implements Log
     }
 
     /**
+     * System is unusable.
+     *
+     * @param string $message
+     * @param array $context
+     *
+     * @return void
+     */
+    public function emergency($message, array $context = array())
+    {
+        $this->monolog->emergency($message, $context);
+    }
+
+    /**
      * Register a file log handler.
      *
      * @param  string $path
@@ -160,4 +173,5 @@ class Logger implements Log
     {
 
     }
+
 }
