@@ -21,7 +21,7 @@ class Logger implements LoggerInterface
      */
     public function __construct()
     {
-        $this->monolog = clone app('log')->getMonolog();
+        $this->monolog = clone app('log')->getLogger();
 
         if( config('request-logger.logger.enabled') && $handlers = config('request-logger.logger.handlers') ) {
             if( count($handlers) ) {
